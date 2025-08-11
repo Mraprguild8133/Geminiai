@@ -35,4 +35,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import requests; requests.get('http://localhost:5000/health', timeout=5)" || exit 1
 
 # Default command - run polling mode
-CMD ["python", "polling_bot.py"]
+CMD ["python", "main.py"]
